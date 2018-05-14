@@ -3,6 +3,7 @@ package com.karla00058615.restaurants.activities;
 import android.os.Parcelable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements RestaurantListFra
     RestaurantPagerAdapter pagerAdapter;
     List<Restaurant> restaurantList;
     RestaurantListFragment restaurantFragment, favoriteFragment;
+    DrawerLayout drawerLayout;
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -64,6 +66,9 @@ public class MainActivity extends AppCompatActivity implements RestaurantListFra
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.app_name);
         setSupportActionBar(toolbar);
+
+        //setting up the Drawer
+        drawerLayout = findViewById(R.id.drawer_layout);
 
         //setting up the PagerAdapter
         pagerAdapter = new RestaurantPagerAdapter(getSupportFragmentManager(), this);
