@@ -6,8 +6,7 @@
     <item
         android:id="@+id/resturant1"
         android:title="Pizza Hut"
-        android:icon="@drawable/ic_pizza"
-        android:checked="true"/>
+        android:icon="@drawable/ic_pizza"/>
 
     <item
         android:id="@+id/restaurant2"
