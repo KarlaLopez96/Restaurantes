@@ -11,6 +11,10 @@
     <item
         android:id="@+id/restaurant2"
         android:title="Tony Roma's"
+        android:icon="@drawable/ic_restaurant1"/>
+    <item
+        android:id="@+id/restaurant3"
+        android:title="Buffalo Wings"
         android:icon="@drawable/ic_restaurant"/>
 
 </menu>

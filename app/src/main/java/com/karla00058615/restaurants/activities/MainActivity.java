@@ -1,5 +1,6 @@
 package com.karla00058615.restaurants.activities;
 
+import android.content.Intent;
 import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements RestaurantListFra
 
         //setting up the PagerAdapter
         pagerAdapter = new RestaurantPagerAdapter(getSupportFragmentManager(), this);
-        pagerAdapter.addItem("Restaurants", restaurantFragment);
+        pagerAdapter.addItem("Menu", restaurantFragment);
         pagerAdapter.addItem("Favorites", favoriteFragment);
 
         //setting up the Viewpager
@@ -216,6 +217,10 @@ public class MainActivity extends AppCompatActivity implements RestaurantListFra
 
                     }
                 });
+                break;
+            case R.id.restaurant3:
+                Intent intent = new Intent(this,RestaurantInfo.class);
+                startActivity(intent);
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
