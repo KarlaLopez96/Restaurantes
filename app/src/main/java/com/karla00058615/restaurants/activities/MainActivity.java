@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements RestaurantListFra
         l.add(new Restaurant(1, "Pizza Grande", 3, false));
         l.add(new Restaurant(1, "Pizza pequeña", 4, false));
         l.add(new Restaurant(1, "Ensalada", 3, false));
-        l.add(new Restaurant(1, "Lasaña", 2, true));
+        l.add(new Restaurant(1, "Lasaña", 2, false));
 
         return l;
     }
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity implements RestaurantListFra
         l.add(new Restaurant(1, "Carne", 3, false));
         l.add(new Restaurant(1, "Costillas", 4, false));
         l.add(new Restaurant(1, "Hamburguesa", 3, false));
-        l.add(new Restaurant(1, "Alitas", 2, true));
+        l.add(new Restaurant(1, "Alitas", 2, false));
 
         return l;
     }
